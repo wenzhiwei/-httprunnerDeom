@@ -1,10 +1,14 @@
 import requests
+import pytest
 
 
-def test_mubu():
-    url="http://mubu.com/"
-    heraders={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+
+class TestMubu:
+
+   def test_mubu(slef):
+       url="http://mubu.com/"
+       heraders={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
               }
-    res=requests.get(url,headers=heraders)
+       res=requests.get(url,headers=heraders)
 
-    print(res.content)
+       print(res.content)

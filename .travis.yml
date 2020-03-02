@@ -14,5 +14,4 @@ matrix:
 install:
   - pip install poetry
   - poetry install -vvv
-script:
-  - python test_interface.py
+script: py.test
