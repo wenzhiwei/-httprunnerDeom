@@ -1,0 +1,12 @@
+request:
+    url: "https://mubu.com/api/login/submit"
+    method: "POST"
+    headers:
+       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+       "content-type": "application/x-www-form-urlencoded;charset=UTF-8"
+    verify: False
+    data: "phone=18813037753&password=13261297907&remember=true"
+validate:
+    status_code: 200
+
+
