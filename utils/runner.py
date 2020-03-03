@@ -1,4 +1,5 @@
 import requests
+import urllib3
 import yaml
 
 from utils import loader
@@ -10,6 +11,7 @@ def runner_yaml(file):
     url=reqs.pop("url")
     print("url:"+url)
     method=reqs.pop("method")
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     req=requests.request(method,url,**reqs);
 
     validator_map=runner_json["validate"]

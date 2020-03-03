@@ -15,6 +15,6 @@ install:
   - pip install poetry
   - poetry install -vvv
 script:
-  - poetry run coverage run --source=httprunnerDeom -m pytest
+  - poetry run coverage run --source=.tests -m pytest test_single_api.py
   - poetry run coverage report
   - poetry run coveralls
