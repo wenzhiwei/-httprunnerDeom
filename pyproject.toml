@@ -10,6 +10,7 @@ python = "^3.8"
 requests = "^2.23.0"
 pytest = "^5.3.5"
 pyyaml = "^5.3"
+jsonpath = "^0.82"
 
 [tool.poetry.dev-dependencies]
 coverage = "^5.0.3"

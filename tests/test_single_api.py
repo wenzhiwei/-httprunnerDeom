@@ -13,11 +13,11 @@ class TestSingleApi:
         self.load= load_yaml(self.single_api_yml)
         assert self.load["request"]["url"] =="https://mubu.com/"
 
-    def test_run_single_api(self):
+    def test_login_submit(self):
         self.single_api_yml = os.path.join(os.path.dirname(__file__), "api", "mubu_login_submit.yml")
         self.result = runner_yaml(self.single_api_yml)
         assert self.result == True
-
+    def test_homepage(self):
         self.single_api_yml=os.path.join(os.path.dirname(__file__),"api","mubu_homepage.yml")
         self.result = runner_yaml(self.single_api_yml)
         assert self.result == True

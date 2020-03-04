@@ -8,5 +8,6 @@ request:
     data: "phone=18813037753&password=13261297907&remember=true"
 validate:
     status_code: 200
+    $.code: 0
 
 
